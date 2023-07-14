@@ -40,7 +40,7 @@ export class EarthquakeDataComponent implements OnInit {
   }
 
   fetchEarthquakeData(): void {
-    this.http.get<any>('http://localhost:5002/earthquakes')
+    this.http.get<any>('https://earthquake-i1be.onrender.com/earthquakes')
       .subscribe(
         data => {
           console.log('API Response:', data);
